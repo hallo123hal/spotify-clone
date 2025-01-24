@@ -13,10 +13,10 @@ function Footer() {
   return (
     <div className="footer">
         <div className="footer__left">
-          <img className="footer__albumLogo" src="https://upload.wikimedia.org/wikipedia/en/2/2e/Usher-Yeah!.jpg" alt=""/>
+          <img className="footer__albumLogo" src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/09/7d/b0/097db06f-8403-3cf7-7510-139e570ca66b/196871341882.jpg/1200x1200bf-60.jpg" alt="Album Cover"/>
           <div className="footer__songInfo">
-            <h4>Yeah!</h4>
-            <p>Usher</p>
+            <h4>TILL FURTHER NOTICE</h4>
+            <p>Trà Vinh Cốt</p>
           </div>
         </div>
           
