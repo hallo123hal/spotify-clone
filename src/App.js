@@ -39,6 +39,13 @@ function App() {
           playlists: playlists,
         });
       });
+
+      spotify.getPlaylist('3DZLELxkwDEg045u6CoPDx').then(response => {
+        dispatch({
+          type: 'SET_DISCOVER_WEEKLY',
+          discover_weekly: response,
+        });
+      });
     }
   }, []); //run once if none given here, if there is a variable, it will run everytime that variable changes
 
