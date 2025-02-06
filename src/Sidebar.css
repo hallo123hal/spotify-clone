@@ -1,11 +1,25 @@
 .sidebar {
-    height: 100vh;
+    height: 100%;
     flex: 0.2;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
     min-width: 230px;
     background-color: #040404;
+    overflow-y: auto; 
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 8px;  /* Customize scrollbar width */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);  /* Customize scrollbar color */
+    border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 .sidebar__logo {
