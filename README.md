@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# Spotify Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Spotify clone built with **React.js**, **Context API**, **Material-UI**, and **Spotify Web API**. This app allows users to authenticate with their Spotify accounts, view playlists, play songs, and control playback.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Authentication:**
+  - OAuth 2.0 login via Spotify.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Spotify API Integration:**
+  - Fetch user data, playlists.
+  - Display tracks on a playlist.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Music Player Controls:**
+  - Play, pause, skip, shuffle, repeat.
+  - Volume control with slider.
 
-### `npm test`
+- **Dynamic UI:**
+  - Responsive design with Flexbox.
+  - Styled using Material-UI icons and custom CSS.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend:** React.js, Context API
+- **Styling:** Material-UI, CSS (Flexbox)
+- **API:** Spotify Web API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Setup Instructions
 
-### `npm run eject`
+1. **Clone the Repository:**
+   ```bash
+   git clone https://https://github.com/hallo123hal/spotify-clone.git
+   cd spotify-clone
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Spotify API Setup:**
+   - Create a Spotify Developer account: [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/)
+   - Create a new app and copy the **Client ID**.
+   - Set your **Redirect URI** to `http://localhost:3000/` in the Spotify Dashboard.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Configure API Keys:**
+   - Open `spotify.js`.
+   - Replace the `clientId` with your own Spotify Client ID.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. **Run the App:**
+   ```bash
+   npm start
+   ```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+├── public/
+├── src/
+│   ├── App.js
+│   ├── Player.js
+│   ├── Sidebar.js
+│   ├── Body.js
+│   ├── Footer.js
+│   ├── SongRow.js
+│   ├── SidebarOptions.js
+│   ├── Header.js
+│   ├── Login.js
+│   ├── DataLayer.js
+│   ├── reducer.js
+│   ├── spotify.js
+│   ├── index.js
+│   └── index.css
+├── package.json
+└── README.md
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Key Files
 
-### Analyzing the Bundle Size
+- **App.js:** Handles authentication and renders main player or login.
+- **spotify.js:** Manages Spotify API authentication and token extraction.
+- **DataLayer.js:** Sets up global state using Context API.
+- **reducer.js:** Handles state updates (user info, playlists, etc.).
+- **Player.js:** Main layout containing Sidebar, Body, and Footer.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is for educational purposes and is not affiliated with Spotify.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Screenshots
 
-### Deployment
+![Login Screen](./login.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Player UI 1](./player1.png)
 
-### `npm run build` fails to minify
+![Player UI 2](./player2.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## Contact
+
+For any queries or suggestions, feel free to reach out!
+
+---
