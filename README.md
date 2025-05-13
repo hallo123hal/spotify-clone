@@ -13,10 +13,6 @@ A Spotify clone built with **React.js**, **Context API**, **Material-UI**, and *
   - Fetch user data, playlists.
   - Display tracks on a playlist.
 
-- **Music Player Controls:**
-  - Play, pause, skip, shuffle, repeat.
-  - Volume control with slider.
-
 - **Dynamic UI:**
   - Responsive design with Flexbox.
   - Styled using Material-UI icons and custom CSS.
